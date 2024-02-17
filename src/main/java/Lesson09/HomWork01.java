@@ -52,7 +52,7 @@ public class HomWork01 {
                     {
                         int answer = scanner.nextInt();
 
-                        System.out.println(answer + "Повторить процесс? ");
+                        System.out.println(answer + "Повторить процесс lfkmit? ");
                         break;
 
                     }
