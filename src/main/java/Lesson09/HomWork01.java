@@ -30,6 +30,7 @@ public class HomWork01 {
         while (true) {
             System.out.println("Выберите операцию (+,-,*,/)");
             char operation = scanner.next().charAt(0);
+            boolean continueOperation = true;
             System.out.println("Введите первое число");
             int a = scanner.nextInt();
             System.out.println("Введите второе число");
@@ -44,18 +45,21 @@ public class HomWork01 {
                 int result = a * b;
                 System.out.println(a + " * " + b + " = " + result);
             } else if (operation == '/') {
-                int result = a / b;
-                System.out.println(a + " / " + b + " = " + result);
-                while (result != 0) {
-                    result = operation;
-                    System.out.println("result" + operation);
-                    {
-                        int answer = scanner.nextInt();
+                if (b !=0) {
 
-                        System.out.println(answer + "Повторить процесс? ");
-                        break;
+                } else {
+                    while (b == 0) {
+                        System.out.println("Ошибка! Введите второе число еще раз: ");
+                        b = scanner.nextInt();
+                    }int result = a / b;
+                    System.out.println(a + " / " + b + " = " + result);
 
                     }
+                System.out.println( "Хочешь продолжить? Да или Нет ");
+                String answer = scanner.next();
+                if (answer.equals("Нет"))
+                {continueOperation = false;
+                    System.out.println("Конец");
                 }
 
             }}}}
