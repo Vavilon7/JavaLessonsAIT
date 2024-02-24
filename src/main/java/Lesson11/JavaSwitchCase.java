@@ -14,7 +14,7 @@ public class JavaSwitchCase {
                 // Код для выполнения если expression== "value3"
                 break;
             default:
-                //Код для выполнения если expresiion не соответствует ни одному case
+                //Код для выполнения если expression не соответствует ни одному case
         }
         int day =3;
         String dayString;
