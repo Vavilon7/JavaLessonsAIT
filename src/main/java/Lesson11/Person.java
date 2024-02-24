@@ -1,6 +1,7 @@
 package Lesson11;
 
 public class Person {
+
     private int age = 23;
 
     private String name = "Max";
@@ -33,11 +34,4 @@ public class Person {
         return sex;
     }
 }
-
-
-
-
-
-
-
 
