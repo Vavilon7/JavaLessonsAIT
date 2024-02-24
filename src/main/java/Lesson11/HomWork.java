@@ -2,8 +2,7 @@ package Lesson11;
 
 import java.util.Scanner;
 
-public class HomWork {
-    public class CarDatabase {
+    public class HomWork {
         static Scanner scanner = new Scanner(System.in);
 
         public static void main(String[] args) {
@@ -45,4 +44,4 @@ public class HomWork {
         }
     }
 
-}
+
