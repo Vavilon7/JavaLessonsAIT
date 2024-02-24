@@ -20,7 +20,7 @@ public class Task01 {
             case "jpg" -> "Изображение";
             default -> "Неизвестный тип файла";
         };
-        System.out.println("Тип файла для расширения ." + file + " : " + fileType);
+        System.out.println("Тип файла для расширения. " + file + " : " + fileType);
     }
 }
 
