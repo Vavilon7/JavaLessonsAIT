@@ -11,10 +11,10 @@ public class HomWork {
         double length= 20.55;
         double width= 30.77;
 
-        double getCalculeteArea=(length + width);
-        System.out.println( " Площадь прямоугольника " + "= " +getCalculeteArea );
+        double сalculeteArea=(length + width);
+        System.out.println( " Площадь прямоугольника " + "= " + сalculeteArea );
         double calculatePerimeter = 2 * (length + width);
-        System.out.println( " Периметр прямоугольника " + "= " +calculatePerimeter );
+        System.out.println( " Периметр прямоугольника " + "= " + calculatePerimeter );
     }
 }
 
