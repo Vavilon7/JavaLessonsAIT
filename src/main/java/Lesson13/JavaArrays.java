@@ -15,11 +15,11 @@ public class JavaArrays {
 
             int salaryMaxFirstMonth = salaryMax[0];
             int sizeSalarymax = salaryMax.length;
-            //System.out.println("salaryMaxFirstMonth " + salaryMaxFirstMonth);
-            //System.out.println("sizeSalarymax " + sizeSalarymax);
+            System.out.println("salaryMaxFirstMonth " + salaryMaxFirstMonth);
+            System.out.println("sizeSalarymax " + sizeSalarymax);
 
 
-            for(int i = 0; i < salaryMaria.length; i++ ){
+           for(int i = 0; i < salaryMaria.length; i++ ){
                 System.out.println(salaryMaria[i]);
             }
 
