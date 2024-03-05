@@ -19,14 +19,14 @@ public class TaskArray {
         salaryMaria[5] = 490;
         salaryMaria[6] = 250;
 
-        /**int minSalaryMaria = getMinSalary(salaryMaria);
+        int minSalaryMaria = getMinSalary(salaryMaria);
          System.out.println(minSalaryMaria);
-         System.out.println(checkElementsInArray(salaryMaria));*/
+         System.out.println(checkElementsInArray(salaryMaria));
         int[] firstArray = {1, 2, 3, 4};
         int[] secontArray = {6, 7, 8};
         sumArraysNew(firstArray, secontArray);
     }
-
+// вывод минимальной зарплаты
     public static int getMinSalary(int[] salary) {
         int minSalary = salary[0];
         for (int i = 1; i < salary.length; i++) {
