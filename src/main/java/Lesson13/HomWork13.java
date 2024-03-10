@@ -35,6 +35,7 @@ import java.util.Scanner;
 Цель: Практика работы с параллельными массивами для управления связанными данными.*/
 public class HomWork13 {
     public static void main(String[] args) {
+        Scanner scanner =new Scanner(System.in);
         String[] hobbyVictoria = new String[5];
         hobbyVictoria[0] = "рисование";
         hobbyVictoria[1] = "спорт";
@@ -45,23 +46,23 @@ public class HomWork13 {
             for (int x = 0; x < hobbyVictoria.length; x++) {
                 System.out.println("hobbyVictoria " + (x + 1) + " = " + hobbyVictoria[x]);
             }
-            {
-                boolean found = false;
-                int index = 0;
-                String hobby = "музыка";
-                for (int i = 0; i < hobbyVictoria.length; i++) {
-                    if (hobby.equals(hobbyVictoria[i])) {
-                        index = i;
-                        found = true;
-                        break;
-                    }
+        {
+            boolean found = false;
+            int index = 0;
+            String hobby = "музыка";
+            for (int i = 0; i < hobbyVictoria.length; i++) {
+                if (hobby.equals(hobbyVictoria[i])) {
+                    index = i;
+                    found = true;
+                    break;
                 }
-                if (found)
-                    System.out.println("Хобби " + hobby + " найден в списке хобби " + (index + 1));
-                else
-                    System.out.println("Хобби " + hobby + " не найден в списке");
-
             }
+            if (found)
+                System.out.println("Хобби " + hobby + " найден в списке хобби " + (index + 1));
+            else
+                System.out.println("Хобби " + hobby + " не найден в списке");
+
+        }
             {
                 hobbyVictoria = new String[6];
                 hobbyVictoria[0] = "рисование";
