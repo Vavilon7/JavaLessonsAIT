@@ -1,6 +1,7 @@
 package Lesson15;
 
-public class JavaMethods {public static void main(String[] args) {
+public class JavaMethods {
+    public static void main(String[] args) {
     printNames("Anna", "Alex", "Maria", "Alexander", "Olga");
     printNames("Max");
     printNames("Julia", "Romeo", "Alla", "Inna");
@@ -12,12 +13,14 @@ public class JavaMethods {public static void main(String[] args) {
     }
 
     public  static double sum(double a, double b){
-        return  a+b;
+
+    return  a+b;
     }
 
     static int yearSalary=0;
 
     public  static  int addSalary(int monthSalary){
+
         return yearSalary = yearSalary +  monthSalary;
     }
 
