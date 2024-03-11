@@ -1,16 +1,16 @@
 package Lesson12;
 
-public class JavaMethods
-{public static void main(String[] args) {
-    printGreeting();
-    printGreetingStudent("Anna");
-    printGreetingStudent("Anna", 42.2);
-    boolean checkResult = checkStudent("Anna");
-    System.out.println(checkResult);
-    //checkGroupNumber(234);
-    int factorial = getFactorial(5);
-    System.out.println(factorial);
-}
+public class JavaMethods {
+    public static void main(String[] args) {
+        printGreeting();
+        printGreetingStudent("Anna");
+        printGreetingStudent("Anna", 42.2);
+        boolean checkResult = checkStudent("Anna");
+        System.out.println(checkResult);
+        //checkGroupNumber(234);
+        int factorial = getFactorial(5);
+        System.out.println(factorial);
+    }
 
     public static void printGreeting() {
         System.out.println("Hallo Berlin!!!");
@@ -48,12 +48,11 @@ public class JavaMethods
     //валидация входящих параметров
 
     //расчет факториала
-    public static int getFactorial(int number){
-        if(number == 1){
+    public static int getFactorial(int number) {
+        if (number == 1) {
             return 1;
-        }
-        else {
-            return  number * getFactorial((number -1));
+        } else {
+            return number * getFactorial((number - 1));
         }
     }
 }
