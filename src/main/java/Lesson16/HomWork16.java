@@ -6,7 +6,6 @@ public class HomWork16 {
         goodsInvoice(25, 44, 12);
         goodsInvoice(36, 15, 55, 46);
     }
-
     static void goodsInvoice(int... goods) {
         for (int good : goods) {
             System.out.println(good);
@@ -24,7 +23,6 @@ public class HomWork16 {
             } else if (good < minGoods) {
                 minGoods = good;
             }
-
         }
         System.out.println("Всего : " + sum);
         System.out.println("Максимальное значение " + maxGoods);
