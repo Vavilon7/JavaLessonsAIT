@@ -1,13 +1,12 @@
 package HomWork22;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+
 import java.util.HashSet;
 
 public class AddressDetails {
     public static void main(String[] args) {
-        HashSet<Property> propertyHashSet = new HashSet<>();
+        HashSet <Property> propertyHashSet = new HashSet<>();
         Property house = new Property("Victory str. ", " private ", 25);
         Property apartment = new Property("ul. Tsvetochnaya ", " private ", 127);
         Property dormitory = new Property("prosp. Stroiteley ", " state property ", 225);
@@ -32,7 +31,7 @@ public class AddressDetails {
 
             System.out.println("---------------------");
         }
-        ArrayList<ArrayList<String>> listOfLists =new ArrayList<>();
+        ArrayList<ArrayList<String>> listOfList =new ArrayList<>();
         for (Property property : propertyHashSet){
             System.out.println(property.getAddress() +property.getNumbers()  + property.getType());
         }
