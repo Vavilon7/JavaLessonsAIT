@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
 
-public class ClothingManager {private HashSet<ClothingItem> collection = new HashSet<>();
+public class ClothingManager {
+    private HashSet<ClothingItem> collection = new HashSet<>();
 
     public void addClothingItem(ClothingItem clothingItem) {
         if (clothingItem == null) {
