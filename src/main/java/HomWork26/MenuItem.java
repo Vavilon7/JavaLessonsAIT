@@ -10,7 +10,6 @@ public class MenuItem  {
         orderStatus(OrderStatus.DELIVERED);
         orderStatus(OrderStatus.CANCELLED);
     }
-
     public static void foodList(MenuItemTape menuItemTape) {
         switch (menuItemTape) {
             case DISH:
