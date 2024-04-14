@@ -2,7 +2,8 @@ package Lesson22;
 
 import java.util.Objects;
 
-public class Book {private String title;
+public class Book {
+    private String title;
 
     private String author;
 
