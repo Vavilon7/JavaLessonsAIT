@@ -12,8 +12,6 @@ public class TestEnum {
 
     private static EnumMap<Day,String>  dayStringEnumMap = new EnumMap<>(Day.class);
 
-
-
     public static void main(String[] args) {
         weekend.add(Day.FRIDAY);
         weekend.add(Day.TUESDAY);
@@ -24,9 +22,6 @@ public class TestEnum {
         dayStringEnumMap.put(Day.SATURDAY,"Cool !!!");
 
         System.out.println(HttpStatus.NOT_FOUND.getMessage());
-
-
-
 
 
         if(dayOfWeek.equals (Day.MONDAY)){
