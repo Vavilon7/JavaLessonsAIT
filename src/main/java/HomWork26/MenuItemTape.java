@@ -9,6 +9,7 @@ public enum MenuItemTape {
         this.type = type;
         this.portion = portion;
     }
+
     public String getType() {
         return type;
     }

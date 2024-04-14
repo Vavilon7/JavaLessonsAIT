@@ -9,7 +9,6 @@ public class MenuItem  {
         orderStatus(OrderStatus.SHIPPED);
         orderStatus(OrderStatus.DELIVERED);
         orderStatus(OrderStatus.CANCELLED);
-
     }
 
     public static void foodList(MenuItemTape menuItemTape) {
