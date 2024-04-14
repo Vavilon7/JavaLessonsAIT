@@ -1,9 +1,9 @@
 package HomWork26;
 
-public class MenuItem {
+public class MenuItem  {
     public static void main(String[] args) {
         foodList(MenuItemTape.DISH);
-        foodList(MenuItemTape.DRINK);
+
         orderStatus(OrderStatus.PENDING);
         orderStatus(OrderStatus.PROCESSING);
         orderStatus(OrderStatus.SHIPPED);
@@ -38,8 +38,10 @@ public class MenuItem {
                 break;
             case DELIVERED:
                 System.out.println(orderStatus.getDescription());
+                break;
             case CANCELLED:
                 System.out.println(orderStatus.getDescription());
+                break;
         }
     }
 }

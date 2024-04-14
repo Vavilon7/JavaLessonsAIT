@@ -5,19 +5,13 @@ public enum MenuItemTape {
     DISH("Пицца" , 250  );
     private String type;
     private int portion;
-
-
-
     MenuItemTape(String type, int portion ) {
         this.type = type;
         this.portion = portion;
-
     }
-
     public String getType() {
         return type;
     }
-
     public int getPortion() {
         return portion;
     }
