@@ -11,7 +11,6 @@ public enum OrderStatus {
     {
         this.description = description;
     }
-
     public String getDescription() {
         return description;
     }
