@@ -7,7 +7,7 @@ public enum OrderStatus {
     DELIVERED ( " Время доставки 15 минут"),
     CANCELLED(" Отмена заказа");
     private String description;
-    OrderStatus (String description)
+     private OrderStatus (String description)
     {
         this.description = description;
     }
