@@ -13,4 +13,4 @@ public class MenuItemTest {
         System.out.println(orderStatus.name() + " " + orderStatus.getDescription());
         System.out.println(orderStatus.canCancel());
    }
-} 
+}
