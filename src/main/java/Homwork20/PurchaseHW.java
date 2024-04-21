@@ -1,4 +1,4 @@
-package Lesson20Homwork;
+package Homwork20;
 
 import java.util.ArrayList;
 
