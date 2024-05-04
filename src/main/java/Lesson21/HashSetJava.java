@@ -49,6 +49,9 @@ public class HashSetJava {
             }
 
             System.out.println(hashSet.toArray().toString());
+            break;
         }
-    }}
+
+    }
+}
 
