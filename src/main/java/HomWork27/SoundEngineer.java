@@ -5,6 +5,11 @@ public class SoundEngineer extends FilmStudioEmployee {
         super(name, position, experienceYears);
     }
     public void recordSound (){
-        System.out.println( getPosition() + " идет запись звука " + getExperienceYears() +  " минут ");
+        System.out.println( getName() + " record sound " );
+    }
+
+    @Override
+    public void work() {
+        System.out.println(getName() +  " checks sound  ");
     }
 }
