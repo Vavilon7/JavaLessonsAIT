@@ -1,6 +1,11 @@
 package Lessons26;
 
-public class AppleHeadset extends Headset{
+import Lessons26.ChargingType;
+import Lessons26.ConnectionType;
+import Lessons26.Headset;
+import Lessons26.Size;
+
+public class AppleHeadset extends Headset {
     private String softwareVersion;
 
     public AppleHeadset(boolean waterresistant,
