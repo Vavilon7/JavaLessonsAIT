@@ -9,7 +9,6 @@ public class AutoCons {
     private Color color;
     private int price;
     private int year;
-
     public AutoCons(String model, String version, int battery, Color color, int price, int year) {
         this.model = model;
         this.version = version;
