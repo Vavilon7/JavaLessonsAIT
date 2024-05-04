@@ -9,7 +9,6 @@ public enum Access {
         this.level = level;
     }
 
-
     public boolean canNone() {
         return this.level >= NONE.level;
     }
