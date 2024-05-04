@@ -5,15 +5,20 @@ public class Director extends FilmStudioEmployee {
         super(name, position, experienceYears);
 
     }
-    public void leads (){
-        super.work();
-        System.out.println( getName()  + " руководит сьемочной группой " + getExperienceYears() + " лет" );
-    }
-    @Override
-    public void work (){
-        super.work();
-        System.out.println( " Mister Nic works on her current task");
 
+    public void direct() {
+        System.out.println(getName() + " is a director" );
+    }
+
+    @Override
+    public String toString() {
+        return "Director{}" + super.toString();
+    }
+
+    @Override
+    public void work() {
+        super.work();
+        System.out.println( "Director makes Casting");
     }
 }
 
