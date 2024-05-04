@@ -4,8 +4,17 @@ public class CameraOperator extends FilmStudioEmployee {
     public CameraOperator(String name, String position, int experienceYears) {
         super(name, position, experienceYears);
     }
-    public void controls (){
-        super.work();
-        System.out.println( getName() +  " оператор управляет камерой " + getExperienceYears() + " лет ");
+    public void  operateCamera (){
+        System.out.println( getName() + " is operating camera . ");
+    }
+
+    @Override
+    public String toString() {
+        return "CameraOperator{}" + super.toString();
+    }
+
+    @Override
+    public void work() {
+        System.out.println( getName() + " is making light");
     }
 }
