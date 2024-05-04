@@ -31,7 +31,6 @@ public class AutoCatalog {
         HashSet<AutoCons> resultSearch = AutoCons.filterByModel (autoConsHashSet, "ModelS", "Performance");
         AutoCons.printObjectsInfo(resultSearch);
     }
-
     public static void accessCheck(Access access) {
         switch (access) {
             case NONE:
