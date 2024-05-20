@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class HonWork02 {
 
 
-    public class Task02 {
-
         public static String str2 = "";
         public static String str1 = "";
 
@@ -70,4 +68,4 @@ public class HonWork02 {
         }
     }
 
-}
+
