@@ -2,9 +2,6 @@ package Lesson12;
 import java.util.Scanner;
 public class HomWork01 {
 
-    public class Task01 {
-
-
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("length --> ");
@@ -37,4 +34,4 @@ public class HomWork01 {
 
     }
 
-}
+

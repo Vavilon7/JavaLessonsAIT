@@ -2,7 +2,8 @@ package HomWork23;
 
 import java.util.Objects;
 
-public class ClothingItem {private String name;
+public class ClothingItem {
+    private String name;
 
     private double size;
 

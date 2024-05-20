@@ -9,7 +9,7 @@ public class TestClothingManager {
         clothingManager.addClothingItem(new ClothingItem("Shorts", 50, "blue", "underwear"));
         clothingManager.addClothingItem(new ClothingItem("T-Short", 60, "red", "topwear"));
         clothingManager.addClothingItem(new ClothingItem("Baseball cap", 20, "blue", "hatswear"));
-        clothingManager.addClothingItem(new ClothingItem("Rally shorts", 40, "black", "underwear"));
+        clothingManager.addClothingItem(new ClothingItem("Jeans", 50, "blue", "underwear"));
         clothingManager.printAllElementsInCollection();
 
         clothingManager.printAllCategoriesInCollection();
