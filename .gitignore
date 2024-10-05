@@ -35,4 +35,8 @@ build/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Store!/src/main/java/Lessons26/AppleHeadset.java
+
+!/src/main/java/Lessons26/SamsungHeadset.java
+
+!/src/main/java/Lessons26/Headset.java

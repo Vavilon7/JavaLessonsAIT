@@ -6,13 +6,13 @@ import java.util.Objects;
 public class Property {
 
     private String address;
-    private String type;
-    private int numbers;
 
-    public Property(String address, String type, int numbers) {
+    private String type;
+
+
+    public Property(String address, String type) {
         this.address = address;
         this.type = type;
-        this.numbers = numbers;
     }
 
     public String getAddress() {
@@ -23,8 +23,29 @@ public class Property {
         return type;
     }
 
-    public int getNumbers() {
-        return numbers;
+    public static HashSet<Property> filterByType(HashSet<Property> propertyHashSet, String type){
+        HashSet<Property> filteredObjects = new HashSet<>();
+        if(propertyHashSet.isEmpty()){
+            System.out.println("Property hashSet is empty");
+        }
+        else {
+            for (Property property : propertyHashSet) {
+                if (property.getType().equalsIgnoreCase(type)) {
+                    filteredObjects.add(property);
+                }
+            }
+            if(filteredObjects.isEmpty()){
+                System.out.println("No properties was found");
+            }
+        }
+        return filteredObjects;
+    }
+
+    public static HashSet<Property> compareHashSetObjects(HashSet<Property> hashSetOne,
+                                                          HashSet<Property> hashSetTwo){
+        HashSet<Property> result = new HashSet<>(hashSetOne);
+        result.removeAll(hashSetTwo);
+        return result;
     }
 
     @Override
@@ -32,12 +53,12 @@ public class Property {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Property property = (Property) o;
-        return numbers == property.numbers && Objects.equals(address, property.address) && Objects.equals(type, property.type);
+        return Objects.equals(address, property.getAddress()) && Objects.equals(type, property.getType());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(address, type, numbers);
+        return Objects.hash(address, type);
     }
 
     @Override
@@ -45,28 +66,18 @@ public class Property {
         return "Property{" +
                 "address='" + address + '\'' +
                 ", type='" + type + '\'' +
-                ", numbers=" + numbers +
                 '}';
     }
 
-    interface PropertyFilter {
-        HashSet<Property> filter(HashSet<Property> properties);
-
-    }
-
-    public static class FilterByType implements PropertyFilter {
-        @Override
-        public HashSet<Property> filter(HashSet<Property> properties) {
-            HashSet<Property> hashSet = new HashSet<>();
-            for (Property property : properties) {
-                if (property.getNumbers() > 100) {
-                    hashSet.add(property);
-
-                }
-            }
-            return hashSet;
-
+    public static void printObjectsInfo(HashSet<Property> hashSetObjects) {
+        if (hashSetObjects.isEmpty()) {
+            System.out.println("No objects in hashSet to print");
+        } else {
+            for (Property property : hashSetObjects) {
+                System.out.println(property.toString());
             }
         }
-
+    }
 }
+
+

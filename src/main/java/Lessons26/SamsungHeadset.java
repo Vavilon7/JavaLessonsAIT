@@ -11,11 +11,11 @@ public class SamsungHeadset extends Headset{
                           int soundLevel,
                           boolean hasMicro,
                           ChargingType chargingType,
-                          boolean aiVersion) {
+                          boolean aiVersion)
+    {
         super(waterresistant, color, connectionType, brand, size, soundLevel, hasMicro, chargingType);
         this.aiVersion = aiVersion;
     }
-
     public boolean isAiVersion() {
         return aiVersion;
     }
